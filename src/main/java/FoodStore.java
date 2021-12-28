@@ -1,11 +1,11 @@
 import java.util.HashMap;
 
 public class FoodStore {
-    public HashMap<String, Integer>food=new HashMap<>();
-    public void addFood(String str,int num){
-        food.put(str,num);
+    public HashMap<String, Integer> foodAndQuantity =new HashMap<>();
+    public void addFood(String food,int quantity){
+        foodAndQuantity.put(food,quantity);
     }
-    public void takeFood(String str){
-        food.remove(str);
+    public void takeFood(String food){
+        foodAndQuantity.remove(food);
     }
 }
